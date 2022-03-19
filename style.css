@@ -252,3 +252,13 @@ main section div p {
     
 
 }
+#react{
+    background-image: url("img/react.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+}
+#portfolio{
+    background-image: url("img/porfolio.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+}
