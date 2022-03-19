@@ -17,7 +17,7 @@ const runCode = () =>{
     const whitchPop = (Node,e) =>{
         Node.style.visibility = 'visible'
         Node.style.left =  (e.clientX - Node.clientWidth/2 )+ 'px';
-        Node.style.top =  (e.clientY - Node.clientHeight - 10)  + 'px';
+        Node.style.top =  (e.clientY - Node.offsetHeight - 10 + window.scrollY)  + 'px';
     }
     const checkPosition = (Node,e) =>{
         return e.clientX >= Node.getBoundingClientRect().x && e.clientX <= Node.getBoundingClientRect().x + Node.clientWidth && e.clientY >= Node.getBoundingClientRect().y &&  e.clientY <= Node.getBoundingClientRect().y + Node.clientHeight;
