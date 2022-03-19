@@ -202,7 +202,6 @@ main{
     justify-content: center; 
     flex-wrap: wrap;
     width: 100%;
-    /* height: 50vh; */
     
 }
 main section{
@@ -261,4 +260,128 @@ main section div p {
     background-image: url("img/porfolio.jpg");
     background-position: 50% 50%;
     background-size: cover;
+}
+#sort{
+    background-image: url("img/sorting.jpg");
+    background-position: 50% 50%;
+    background-size: cover;
+}
+@media (max-width: 1714px) {
+    header h1{
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 1426px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    main section{
+        width: 40%;
+
+    }
+}
+@media (orientation:landscape) and (max-width:1100px) {
+    main section{
+        width: 70%;
+    }
+        
+}
+@media (max-width: 1040px) {
+    header h1{
+        font-size: 2.5rem;
+    }
+    header p{
+        font-size: 1.8rem;
+    }
+}
+@media (orientation:landscape) and (max-width:1000px) {
+    main section{
+        height: 75vh;
+       width: 70%;
+    }
+}
+@media (max-width: 840px) {
+    main section{
+        width: 70%;
+
+    }
+}
+@media (max-width: 724px){
+    header h1{
+        font-size: 2rem;
+        white-space: normal;
+    }
+    header p{
+        font-size: 1.6rem;
+    }
+    .contaner a,.fa-arrow-down-long{
+        font-size: 2.8rem;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        padding: 5px 5px 7px 5px;
+    }
+    .contaner a{
+        margin: 0 15px;
+    }
+    #arrow{
+        display: none;
+    }
+}
+
+@media (max-width: 442px){
+    header h1{
+        font-size: 1.8rem;
+    }
+    header p{
+        font-size: 1.4rem;
+    }
+}
+@media (max-height:860px) and (orientation:portrait)  {
+    main section div h2 {
+        font-size: 1.7rem;
+    }
+    main section div p {
+        font-size: 1.6rem;
+    }
+    .flexCenter a {
+        font-size: 1.5rem;
+    }
+}
+@media (max-height:800px) and (orientation:portrait)  {
+    main section div h2 {
+        font-size: 1.5rem;
+    }
+    main section div p {
+        font-size: 1.3rem;
+    }
+    .flexCenter a {
+
+        font-size: 1.3rem;
+
+        
+    
+    }
+}
+@media (max-height:720px) and (orientation:portrait) {
+    main section{
+        height: 50vh;
+    }
+}
+@media (orientation:landscape) and (max-height:580px) {
+    .contaner a{
+        margin: 0 15px;
+    }
+    #arrow{
+        display: none;
+    }
+        
+}
+@media (orientation:landscape) and (max-height:380px) {
+    main section{
+        height: 95vh;
+       width: 70%;
+    }
 }
